@@ -1,0 +1,18 @@
+[pep8]
+# ↓ cyclic-import: Because this hasn't support TYPE_CHECKING.
+# ↓ redefined-outer-name: Because this hasn't support TYPE_CHECKING.
+# ↓ too-few-public-methods: Because this is against "Single Responsibility Principle".
+# ↓ unused-import: Because this hasn't support TYPE_CHECKING.
+disable=cyclic-import,redefined-outer-name,too-few-public-methods,unused-import
+# ↓ Because we use Idea (following default of Idea).
+max-line-length = 120
+
+[SIMILARITIES]
+# ↓ Because default:4 detects even accrossing 2 methods on 2 classes inheliting same parent class.
+min-similarity-lines=6
+# ↓ Ignore imports when computing similarities.
+ignore-imports=yes
+
+[TYPECHECK]
+# ↓ When set dataclasses.Field instance by dataclasses.field method, no-member detected.
+ignored-classes=dataclasses.Field
