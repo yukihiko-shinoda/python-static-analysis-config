@@ -1,0 +1,5 @@
+[mypy]
+
+# 2019-07-12 setuptools, pytest, numpy, sqlalchemy, factory_boy, inflector, marshmallow, dataclasses_json, bs4, m3u8, ffmpeg, Pillow, aioresponses, win32api don't suply library stub file now.
+[mypy-setuptools,pytest,numpy,sqlalchemy.*,factory,inflector,marshmallow,dataclasses_json,bs4,m3u8,ffmpeg,PIL,aioresponses,win32api]
+ignore_missing_imports = True

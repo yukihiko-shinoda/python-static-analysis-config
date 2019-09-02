@@ -16,3 +16,5 @@ ignore-imports=yes
 [TYPECHECK]
 # ↓ When set dataclasses.Field instance by dataclasses.field method, no-member detected.
 ignored-classes=dataclasses.Field
+# ↓ @see https://stackoverflow.com/questions/20553551/how-do-i-get-pylint-to-recognize-numpy-members/27943375#27943375
+ignored-modules=win32api
