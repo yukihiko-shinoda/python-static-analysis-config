@@ -1,3 +1,7 @@
+[DESIGN]
+# https://stackoverflow.com/questions/28722314/why-does-pylint-want-2-public-methods-per-class
+min-public-methods=1
+
 [pep8]
 # ↓ cyclic-import: Because this hasn't support TYPE_CHECKING.
 # ↓ redefined-outer-name: Because this hasn't support TYPE_CHECKING.
